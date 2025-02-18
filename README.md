@@ -61,7 +61,7 @@ Enabling Encryption
 
 ![A diagram of a program
 
-AI-generated content may be incorrect.](image1.png)
+AI-generated content may be incorrect.]![](image1.png)
 
 Normal users can’t access as many bots are requesting our application server
 
@@ -81,7 +81,7 @@ AWS Auto Scaling
 
 ![A diagram of a security system
 
-AI-generated content may be incorrect.](image2.png)
+AI-generated content may be incorrect.]![](image2.png)
 
 AWS Shield Standard: Provides from attacks such as SYN/UDP floods, Reflection attacks & other layer3 / layer4 (TCP) attacks
 
@@ -109,7 +109,7 @@ N/W Firewall => VPC level
 
 ![A diagram of a network firewall
 
-AI-generated content may be incorrect.](image3.png)
+AI-generated content may be incorrect.]![](image3.png)
 
 **AWS Firewall Manager:**
 
@@ -135,7 +135,7 @@ Send findings to Amazon Event Bridge
 
 ![A diagram of a company
 
-AI-generated content may be incorrect.](image5.png)
+AI-generated content may be incorrect.]![](image5.png)
 
 **Inspector only for EC2, Container Images, Lambda funxctions**
 
@@ -169,7 +169,7 @@ Must first enable AWS Config Service
 
 ![A diagram of a multi account
 
-AI-generated content may be incorrect.](image6.png)
+AI-generated content may be incorrect.]![](image6.png)
 
 **Amazon Detective Overview:**
 
@@ -335,7 +335,7 @@ Service Catalog Diagram
 
 ![A diagram of a product
 
-AI-generated content may be incorrect.](image8.png)
+AI-generated content may be incorrect.]![](image8.png)
 
 **Pricing Models in AWS:**
 
@@ -438,7 +438,7 @@ No of HTTP/HTTPS requests
 
 ![A diagram of a network
 
-AI-generated content may be incorrect.](image9.png)
+AI-generated content may be incorrect.]![](image9.png)
 
 Use Private IP instead of public IP for good savings & better N/W performance
 
