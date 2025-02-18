@@ -326,3 +326,198 @@ SCP must have an explicit Allow (doesn't allow anything by default)
 Restrict access to certain services
 
 Explicitly disable services
+
+**Control Tower** =\> to setup multiple accounts
+
+**AWS RAM (Resource Access Manager)**
+
+Share AWS resources that you own with other AWS accounts
+
+Share with any account or within your organisation
+
+Avoid resource duplication
+
+Aurora, VPC Subnets, Transit Gateway, Route 53, EC2 Dedicated Hosts,
+License Manager Configurations... all support RAM
+
+**AWS Service Catalog:**
+
+Self service portal to launch a set of authorized products pre-defined
+by admins
+
+Includes: VMs, DBs, storage options, etc
+
+Enter AWS Service Catalog!
+
+Service Catalog Diagram
+
+![A diagram of a product AI-generated content may be
+incorrect.](./image8.png){width="6.268055555555556in"
+height="3.2534722222222223in"}
+
+**Pricing Models in AWS:**
+
+1)  Pay as you go
+
+2)  Save when you reserve
+
+3)  Pay less by using more
+
+4)  Pay less as AWS grows
+
+**Free Services & Free Tier in AWS**
+
+IAM, VPC, Consolidated Billing, Elastic Beanstalk, CloudFormation, Auto
+Scaling Groups
+
+Free tier: EC2 t2.micro instance for a year, S3, EBS, ELB, AWS Data
+transfer
+
+**Compute Pricing EC2**
+
+Only charged for what you use
+
+Number of instances
+
+Instance Configuration
+
+ELB running time & amount of data processed
+
+Detailed monitoring
+
+EC2:
+
+1)  On-demand instances
+
+2)  Reserved instances (1-3 years commitment)
+
+3)  Spot instances
+
+4)  Dedicated Host
+
+5)  Savings plans
+
+Lambda & ECS:
+
+Lambda: Pay per call, Pay per duration
+
+ECS: EC2 Launch Type =\> No additional fees, you pay for AWS resources
+
+Fargate=\> Pay for vCPU & memory resources allocated to your
+applications in your containers
+
+S3:
+
+Storage class
+
+Number & size of objects
+
+Number & type of requests
+
+Data transfer out of S3 region
+
+S3 Transfer acceleration
+
+Lifecycle transitions
+
+Similar Service: EFS (pay per use)
+
+EBS:
+
+Volume type
+
+Storage volume in GB per month provisioned
+
+IOPS: General Purpose, Provisioned IOPS SSD, Magnetic
+
+Snapshots
+
+Data transfer: Outbound data transfer are tiered for volume discounts,
+Inbound is free
+
+RDS:
+
+Per hour billing
+
+Database characteristics
+
+Purchase type
+
+Backup Storage: No additional charge for backup storage up to 100% of
+your total DB storage for a region
+
+Additional Storage
+
+No of input & output requests per month
+
+Deployment types (single or multi AZs)
+
+Data transfer (Outbound data transfer are tiered for volume discounts),
+Inbound is free
+
+CloudFront:
+
+Different geographic regions
+
+Aggregated for each edge location
+
+Data transfer out
+
+No of HTTP/HTTPS requests
+
+**Networking Costs in AWS per GB:**
+
+![A diagram of a network AI-generated content may be
+incorrect.](./image9.png){width="6.268055555555556in"
+height="3.3895833333333334in"}
+
+Use Private IP instead of public IP for good savings & better N/W
+performance
+
+Use same AZ for max savings (at the cost of high availability)
+
+**Savings Plan Overview:**
+
+Commit a certain amount per hour for 1 or 3 years
+
+**EC2 Savings Plan:**
+
+Commit to usage of individual instance families in a region
+
+All upfront, partial upfront, no upfront
+
+**Compute Savings Plan:**
+
+Regardless of family, region, size, OS, tenancy, compute options
+
+EC2, Fargate, Lambda
+
+**Machine Learning Savings Plan:**
+
+SageMaker
+
+**AWS Compute Optimizer Overview:**
+
+Reduce costs & improve performance by recommending optimal AWS resources
+
+Uses ML to analyze your resources configs & their utilization CloudWatch
+metrics
+
+Supported resources:
+
+EC2 instances, EC2 ASGs, EBS Volumes, Lambda functions
+
+Recommendations can be exported to S3
+
+**Billing & Costing Tools:**
+
+1)  Estimating costs in the cloud: Pricing calculator
+
+2)  Tracking costs in the cloud: Billing dashboard, cost allocation
+    tags, cost & usage reports, cost explorer
+
+3)  Monitoring against costs plans: billing alarms, budgets
+
+**Pricing Calculator:**
+
+Estimate cost for your solution architecture
