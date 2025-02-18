@@ -208,3 +208,121 @@ Find out which resources are shared externally
 Zone of trust = AWS Account or AWS Organization
 
 Access outside zone of trusts = findings
+
+**Amazon Rekognition:**
+
+For faces, objects, etc from Images/Videos
+
+**Amazon Transcribe:**
+
+Convert speech to text
+
+ASR (Automatic Speech Recognition)
+
+Automatically remove PII data using **Redaction**
+
+Automatic Language Identification for multi-lingual audio
+
+Use cases: Customer service calls transcribe, closed captioning &
+subtitling, generate metadata for media assets
+
+**Polly Overview:**
+
+Text to speech
+
+Create applications that talk
+
+**Translate Overview:**
+
+Natural & accurate language translation
+
+**Lex + Connect Overview:**
+
+Amazon Lex =\> tech that powers Alexa
+
+ASR to convert speech to text
+
+Helps build chatbots, call center bots
+
+Amazon Connect:
+
+Receives calls, create **contact flows**, cloud based **virtual contact
+center**
+
+Can integrate with other CRM systems or AWS
+
+![](./image7.png){width="6.268055555555556in"
+height="0.8444444444444444in"}
+
+**Comprehend Overview:**
+
+For NLP
+
+Fully managed & serverless service
+
+Language of the text, sentiment analysis, POS & tokenization, organizes
+a collection of text files
+
+Analyze customer interactions/emails
+
+Create & group articles by topics
+
+**SageMaker Overview:**
+
+Fully managed service for developers / data scientists to build ML
+models
+
+**Kendra Overview:**
+
+Document search service (Search Engine)
+
+Extract answers from within a document
+
+**Amazon Personalize:**
+
+For real-time personalized recommendations
+
+Retail stores, media & entertainment
+
+**Textract Overview:**
+
+Extracts text, handwriting, and data from any scanned docs using AI & ML
+
+Extracts data from forms & tables
+
+Read & Process any type of document (PDFs, images...)
+
+Use cases: Financial Services, Healthcare, Public Sector
+
+**AWS Organizations Units (OUs)**
+
+Global Service
+
+Multiple AWS accounts can be managed
+
+Consolidated Billing, pricing benefits, pooling of reserved EC2
+instances
+
+API available to automate AWS account creation
+
+Restrict account privileges using **Service Control Policies (SCP)**
+
+Multi Account vs One Account Multi VPC
+
+Tagging Standards for billing purposes
+
+Enable CloudTrail on all accounts, send logs to central S3 account
+
+Send CloudWatch logs to central logging account
+
+SCPs doesn't apply to the master account
+
+SCPs applied to all Users & Roles of the Account including Root
+
+SCP doesn't affect service-linked roles
+
+SCP must have an explicit Allow (doesn't allow anything by default)
+
+Restrict access to certain services
+
+Explicitly disable services
