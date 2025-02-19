@@ -59,9 +59,9 @@ Enabling Encryption
 
 **DDOS Attack (Distributed Denial of Service)**
 
-![A diagram of a program
+A diagram of a program
 
-AI-generated content may be incorrect.]![](image1.png)
+AI-generated content may be incorrect.![](image1.png)
 
 Normal users can’t access as many bots are requesting our application server
 
@@ -79,9 +79,9 @@ AWS Auto Scaling
 
 **WAF => Web Application Firewall**
 
-![A diagram of a security system
+A diagram of a security system
 
-AI-generated content may be incorrect.]![](image2.png)
+AI-generated content may be incorrect.![](image2.png)
 
 AWS Shield Standard: Provides from attacks such as SYN/UDP floods, Reflection attacks & other layer3 / layer4 (TCP) attacks
 
@@ -107,9 +107,9 @@ N/W ACL => Subnet Level
 
 N/W Firewall => VPC level
 
-![A diagram of a network firewall
+A diagram of a network firewall
 
-AI-generated content may be incorrect.]![](image3.png)
+AI-generated content may be incorrect.![](image3.png)
 
 **AWS Firewall Manager:**
 
@@ -133,9 +133,9 @@ Reporting & integration with AWS Security Hub
 
 Send findings to Amazon Event Bridge
 
-![A diagram of a company
+A diagram of a company
 
-AI-generated content may be incorrect.]![](image5.png)
+AI-generated content may be incorrect.![](image5.png)
 
 **Inspector only for EC2, Container Images, Lambda funxctions**
 
@@ -167,9 +167,9 @@ Manage Security across AWS accounts and automate security checks
 
 Must first enable AWS Config Service
 
-![A diagram of a multi account
+A diagram of a multi account
 
-AI-generated content may be incorrect.]![](image6.png)
+AI-generated content may be incorrect.![](image6.png)
 
 **Amazon Detective Overview:**
 
@@ -333,9 +333,9 @@ Enter AWS Service Catalog!
 
 Service Catalog Diagram
 
-![A diagram of a product
+A diagram of a product
 
-AI-generated content may be incorrect.]![](image8.png)
+AI-generated content may be incorrect.![](image8.png)
 
 **Pricing Models in AWS:**
 
@@ -436,9 +436,9 @@ No of HTTP/HTTPS requests
 
 **Networking Costs in AWS per GB:**
 
-![A diagram of a network
+A diagram of a network
 
-AI-generated content may be incorrect.]![](image9.png)
+AI-generated content may be incorrect.![](image9.png)
 
 Use Private IP instead of public IP for good savings & better N/W performance
 
@@ -657,3 +657,350 @@ Savings Plans
 Cost Anomaly detection
 
 Service Quotas
+
+**AWS STS (Security Token Service)**
+
+Temporary security credentials to access AWS resources
+
+Short term credentials: you can configure expirations as well
+
+Use cases: Identity federation, IAM roles for cross/same account access, IAM Roles for Amazon EC2 (provide temporary credentials for EC2 instances to access AWS resources)
+
+
+**Amazon Cognito**
+
+Identify for your Web & Mobile Applications users (potentially millions)
+
+Instead of creating them an IAM user, you create a user in Cognito
+
+A diagram of a computer process
+
+AI-generated content may be incorrect.![](image10.png)
+
+**Microsoft Active Directory (AD) Services:**
+
+Found on any Windows Server with AD Domain Services
+
+Database of objects: User Accounts, Computers, Printers, File Shares, Security Groups
+
+Centralized Security Management, Create Account, Assign Permissions
+
+**AWS Directory Services:**
+
+AWS Managed Microsoft AD – Create your own AD in AWS, manage users locally, supports MFA. Establish trust connections with your on-premises AD
+
+AD Connector – Directory Gateway (proxy) to redirect to on-premises AD, supports MFA. Users managed on the on-premises AD
+
+Simple AD – AD compatible managed directory on AWS. Can’t be joined with on-premises AD
+
+**AWS IAM Identity Center / AWS SSO (Single Sign-On):**
+
+One login for all your
+
+1)AWS accounts in AWS Organizations
+
+2)Business cloud applications
+
+3)SAML2.0 enabled applications
+
+4)EC2 windows instances
+
+Identity providers
+
+Built-in identity store in IAM Identity Center
+
+3<sup>rd</sup> party: AD, OneLogin, Okta…
+
+**Advanced Identity Summary:**
+
+IAM (inside AWS accounts) – for users that you trust and belong to your company
+
+Organizations: manage multiple accounts
+
+STS: temporary, limited-priveleges, creds to access AWS resources
+
+Cognito: create a database of users for your mobile & web applications
+
+Directory Services: integrate Microsoft Active Directory in AWS
+
+IAM Identity Center: one login for multiple AWS Accounts & business applications
+
+**Other Services:**
+
+**AWS Workspaces:**
+
+Managed Desktop as a Service (DaaS) solution to easily provision Windows or Linux desktops
+
+Great to eliminate management of on-premises VDI (Virtual Desktop Infrastructure)
+
+Fast and quickly scalable to thousands of users
+
+Secured data – integrates with KMS
+
+Pay-as-you-go service with monthly or hourly rates
+
+Deploy the Workspaces closer to users to reduce the latency across the regions
+
+**AppStream 2.0 Overview:**
+
+Desktop Application Streaming Service
+
+Deliver to any computer, without acquiring, provisioning infrastructure
+
+The application is delivered from within a web browser
+
+AppStream vs Workspace
+
+Workspaces => fully managed VDI & desktop available, Users connect to VDI & open native or WAM applications, Workspaces are on-demand or always on
+
+AppStream 2.0 => Stream a desktop application to web browsers (no need to connect to VDI), Works with any device (that has a web browser), Allow to configure an instance type per application type (CPU, RAM, GPU)
+
+**AWS IoT Core Overview:**
+
+N/W of internet connected devices that are able to collect & transfer data
+
+Easily connect IoT devices to AWS cloud
+
+Serverless, secure & scalable to billions & trillions of messages
+
+Applications can communicate with your devices even when they aren’t connected
+
+Integrates with a lot of AWS services (Lambda, S3, SageMaker, etc)
+
+Build IoT applications that gather, process, analyze and act on data
+
+**Amazon Elastic Transcoder:**
+
+To convert media files stored in S3 into media files in the formats required by consumer playback devices (phones, etc)
+
+Easy to use
+
+Highly scalable
+
+Cost effective – duration based pricing model
+
+Fully managed & secure
+
+Pay for what you use
+
+**AWS AppSync:**
+
+Store & sync data across mobile & web apps in real time
+
+Makes use of GraphQL (mobile technology from Facebook)
+
+Client code can be generated automatically
+
+Integrations with DynamoDB, Lambda
+
+Real-time subscriptions
+
+Offline **data synchronization** (**replaces Cognito Sync**)
+
+Fine Grained Security
+
+**AWS Amplify** can leverage AWS AppSync in the background!
+
+
+**AWS Amplify:**
+
+A set of tools & services that helps you develop and deploy scalable full stack web & mobile applications
+
+Authentication, Storage API (REST, GraphQL), CI/CD, PubSub, Analytics, AI/ML predictions, Monitoring, Source Code from AWS, GitHub, etc
+
+Amplify Backend: S3, Cognito, AppSync, API Gateway, SageMaker, Lex, Lambda, DynamoDB
+
+**AWS Infrastructure Composer:**
+
+Visually design & build serverless applications quickly on AWS
+
+Configure how your resources interact with each other
+
+Generates Infrastructure as Code (IaC) using CloudFormation
+
+Ability to import existing CloudFormation / SAM templates to visualize them
+
+**AWS Device Farm:**
+
+Fully managed service that tests your web and mobile apps against desktop browsers, real mobile devices, and tablets
+
+Run tests concurrently on mobile devices (speed up execution)
+
+Ability to configure device settings (GPS, language, Wi-Fi, Bluetooth)
+
+Test application (web, native, hybrid)
+
+Interact with devices
+
+Reports, logs and screenshots
+
+**AWS Backup Overview:**
+
+Fully managed service to centrally manage & automate backups across AWS services
+
+On-demand & scheduled backups
+
+Supports PITR (Point-in-time Recovery)
+
+Retention Periods, Lifecycle Management, Backup Policies
+
+Cross-Region Backup
+
+Cross-Account Backup (using AWS Organizations)
+
+**Disaster Recovery Strategies:**
+
+Backup & Restore (Cheapest)
+
+Pilot Light (Core functions of the app)
+
+Warm Standby (Full version of the app but at minimum size)
+
+Multi-Site/Hot-Site (Full version of the app at full size)
+
+**AWS Elastic Disaster Recovery (DRS):**
+
+Quickly & easily recover your physical, virtual & cloud-based servers into AWS
+
+Example: protect your most critical databases (including Oracle, MySQL, and SQL Server), enterprise apps (SAP), protect your data from ransomware attacks
+
+Continuous block-level replication for your servers
+
+A diagram of a cloud
+
+AI-generated content may be incorrect.![](image11.png)
+
+**AWS DataSync:**
+
+Move large amount of data from on-premises to AWS
+
+Can synchronize to: S3, EFS, FSx for Windows
+
+Replication tasks can be scheduled hourly, daily, weekly
+
+The replication tasks are incremental after the first full load
+
+**Cloud Migration Strategies – 7Rs:**
+
+Retire = turn off things you don’t  need, helps reducing areas of attacks, Saves cost, focus on resources that must be maintained
+
+Retain = Do nothing for now, security, data compliance, performance, unresolved dependencies, No business value to migrate, mainframe or mid-range and non-x86 Unix apps
+
+Relocate = Move apps from on-premises to its cloud version, move EC2 instances to a different VPC, AWS Account or AWS Region
+
+Rehost “lift” and “shift” = Simple migrations by re-hosting on AWS (applications, databases, data…), Migrate machines, No cloud optimizations being done, could save 30% on cost, Migrate using AWS Application Migration Service
+
+Replatform “lift” and “reshape” = Migrate your DBs to RDS, migrate your application to EBS, Not changing your architecture, but leverage some cloud optimizations, Save time & money by moving to a fully managed service or Serverless
+
+Repurchase “drop” and “shop” = Moving to a different product while moving to the Cloud, Often you move to a SaaS platform, Expensvie in the short term, but quick to deploy, CRM to Salesforce.com, HR to Workday, CMS to Drupal
+
+Refactor/Re-architect = Reimagining how the application is architected using Cloud native features, driven by the need of the business to add features and improve scalability, performance, security and agility, Move from a monolithic application to micro-services, Move an application to serverless architectures, use AWS S3
+
+**Application Discovery Service:**
+
+Plan migration projects by gathering information about on-premises data centers
+
+Server utilization data and dependency mapping are important for migrations
+
+**Agentless Discovery (AWS Agentless Discovery Connector)**
+
+VM inventory, configuration, and performance history such as CPU, memory, and disk usage
+
+**Agent-based Discovery (AWS Application Discovery Agent)**
+
+System configuration, system performance, running processes and details of the network connections between systems
+
+Resulting data can be viewed within AWS Migration Hub
+
+**AWS Application Migration Service (MGN):**
+
+Lift and shift (Rehost) solution which simplify migrating applications to AWS
+
+Converts your physical, virtual, and cloud-based servers to run natively on AWS
+
+Supports wide range of platforms, OS and databases
+
+Minimal downtime, reduced costs
+
+**AWS Migration Evaluator:**
+
+To build data-driven business case for migration to AWS
+
+Provides a clear baseline of what your organization is running today
+
+Install Agentless Collector to conduct broad-based discovery
+
+Take a snapshot of on-premises foot-print, server dependencies
+
+Analyze current state, define target state, then develop migration plan
+
+**AWS Migration Hub:**
+
+Central location to collect servers and applications inventory data for the assessment, planning and tracking of migrations to AWS
+
+Helps accelerate your migration to AWS, automate lift & shift
+
+AWS Migration Hub Orchestrator – provides pre-built templates to save time & effort migrating enterprise apps (eg. SAP, Microsoft SQL Server)
+
+Supports migrations status updates from Application Migration Service (MGN) & Database Migration Service (DMS)
+
+A close-up of a screen
+
+AI-generated content may be incorrect.![](image12.png)
+
+**AWS Fault Injection Simulator (FIS):**
+
+Fully managed service for running fault injection experiments on AWS workloads
+
+Based on Chaos Engineering – stressing an application by creating disruptive events observing how the system responds and implementing improvements
+
+Helps you uncover hidden bugs and performance bottlenecks
+
+Supports EC2, EKS, ECS, RDS
+
+Use pre-built templates that generate the desired disruptions
+
+**AWS Step Functions:**
+
+Build serverless visual workflow to orchestrate your Lambda functions
+
+Features: sequence, parallel, conditions, timeouts, error handling
+
+Can integrate with EC2, ECS, on-premises servers, API Gateway, SQS Queues
+
+Possibility of implementing human approval features
+
+Use cases: order fulfilment, data processing, web applications, any workflow
+
+**AWS Ground Station:**
+
+Fully managed service that lets you control satellite communications, process data and scale your satellite operations
+
+Provides a global network of satellite ground stations near AWS regions
+
+Allows you to download satellite data to your AWS VPC within seconds
+
+Send satellite data to S3 or EC2 instance
+
+Use cases: Weather forecasting, surface imaging, communications, video broadcasting
+
+**AWS Pinpoint:**
+
+Scalable 2-way (outbound/inbound) marketing communications service
+
+Supports email, SMS, push, voice & in-app messaging
+
+Ability to segment & personalize messages with the right content to customers
+
+Possibility to receive replies
+
+Scales to billions of messages per day
+
+Use cases: run campaigns by sending marketing, bulk, transactional SMS messages
+
+**Versus Amazon SNS or Amazon SES:**
+
+In SNS & SES, you managed each message’s audience, content and delivery schedule
+
+In Amazon pinpoint, you create message templates, delivery schedules, highly targeted segments and full campaigns
+
